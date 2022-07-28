@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title>5G</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<div class="main">
+		<nav>
+			<div class="logo">
+				<!--<img src="5g.jpeg" height="100" width="100">-->
+			</div>
+			<div class="nav-links">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Phone</a></li>
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#">Cart</a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+		<div class="information">
+			<div class="overly"></div>
+			<img src="mobi.jpg"class="mobile">
+			<div id="circle">
+				<div class="feature one">
+					<i style="font-size:24px" class="fa">&#xf030;</i>
+					<div>
+						<h1>Camera</h1>
+						<p>12MP,Wide Angle Lens</p>
+					</div>
+				</div>
+				<div class="feature two">
+					<i style="font-size:24px" class="fa">&#xf2db;</i>
+					<div>
+						<h1>Processor </h1>
+						<p>Snapdragon,Octa-core</p>
+					</div>
+				</div>
+				<div class="feature three">
+					<i style="font-size:24px" class="fa">&#xf10b;</i>
+					<div>
+						<h1>Display</h1>
+						<p>6.5" Mini-Drop Fullscreen</p>
+					</div>
+				</div>
+				<div class="feature four">
+					<i style="font-size:24px" class="fa">&#xf240;</i>
+					<div>
+						<h1>Battery</h1>
+						<p>5000mAh,720hrs</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="controls">
+			<div id="upbtn"><i style="font-size:24px" class="fa">&#xf112;</i></div>		
+				<h3>Features</h3>
+			<div id="downbtn"><i style="font-size:24px" class="fa">&#xf064;</i></div>
+		</div>
+	</div>
+
+
+<script>
+	var circle=document.getElementById("circle");
+	var upbtn=document.getElementById("upbtn");
+	var downbtn=document.getElementById("downbtn");
+
+	var rotatevalue=circle.style.transform;
+	var rotateSum;
+
+	upbtn.onClick=function()
+	{
+		rotateSum=rotateValue+"rotate(-90deg)";
+		circle.style.transform=rotateSum;
+		rotateValue=rotateSum;
+	}
+	downbtn.onClick=function()
+	{
+		rotateSum=rotateValue+"rotate(90deg)";
+		circle.style.transform=rotateSum;
+		rotateValue=rotateSum;
+	}
+</script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
